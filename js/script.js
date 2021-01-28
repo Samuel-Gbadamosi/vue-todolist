@@ -28,9 +28,17 @@ var app = new Vue ({
       }
 
     },
+    // Mi aggiungi un controllo che il todo che aggiungo non sia vuoto?
     addTodo(){
-      this.todos.push(this.newTodo);
-      this.newTodo = '';
+      if(this.newTodo.length < 4){
+        alert("insert more than three characters");
+      } else {
+         this.todos.push(this.newTodo);
+         this.newTodo = '';
+      }
+
+
+
     },
     deleEternal(index){
      this.todosDelete.splice(index,1);
