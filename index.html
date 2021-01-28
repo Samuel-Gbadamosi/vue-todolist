@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <!-- font awesome -->
+  <!-- link css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- link css -->
+  <!-- vue link  -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <!-- vue link -->
+
+</head>
+<!-- body -->
+<body>
+    <!-- container -->
+ <div id="app" class="container">
+   <!-- header -->
+   <div class="header">
+    <img src="https://www.boolean.careers/images/misc/logo.png" alt="boolean-logo">
+   </div>
+   <!-- header -->
+<!-- input sect -->
+   <div class="input">
+     <input class="inp" type="text" placeholder="insert your name">
+     <button class="btn"> Enter </button>
+   </div>
+   <!-- input sect -->
+   <div class="sect1">
+    <ul v-if="todos.length > 0">
+      <li  v-for="(todo,index) in todos">{{ index + 1 + ')' + todo  }}
+      <i class="fas fa-times" @click='deleteTodo(index)'></i> </li>
+    </ul>
+    <h3 v-else>List Vuota!!</h3>
+   </div>
+
+
+   <h1>Lista Element Cancellati</h1>
+
+  <!-- sect2  -->
+   <div class="sect2">
+     <ul>
+       <li v-for="(todo,index) in todosDelete"> {{index +1 +')' +todo}}
+
+
+        <i class="fas fa-trash-restore" @click="restoreTodo(index)"></i>
+       <i class="fas fa-trash"></i></li>
+     </ul>
+
+
+   </div>
+   <!-- sect2  -->
+
+
+
+ </div>
+ <!-- container -->
+
+<!-- script js -->
+<script src="js/script.js" charset="utf-8"></script>
+<!-- script js -->
+
+</body>
+<!-- body -->
+
+</html>

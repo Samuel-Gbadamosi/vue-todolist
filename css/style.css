@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.container {
+  margin: auto;
+  max-width: 1140px;
+  /* background-color: red; */
+}
+
+.header {
+  height: 100px;
+}
+
+img {
+  height: 80px;
+  padding-left: 366px;
+  margin-top: 20px;
+}
+
+.input {
+  height: 80px;
+  margin-top: 10px;
+  /* background-color: lightgreen; */
+  text-align: center;
+
+}
+
+.input .inp {
+  height: 31px;
+    width: 388px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.btn{
+  height: 29px;
+  width: 103px;
+  margin-top: 7px;
+  border-radius: 42px;
+  margin-left: 16px;
+  color: blue;
+}
+
+.sect1{
+  /* height: 200px; */
+  background-color: orange;
+  border-radius: 20px;
+}
+.sect1 ,.sect2:hover{
+  cursor:pointer;
+}
+
+ul li {
+  list-style: none;
+}
+.sect1 ul li{
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight:lighter;
+  font-family:fantasy;
+
+}
+
+.sect2 ul li{
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight:lighter;
+  font-family:fantasy;
+
+}
+
+.sect1 ul li:hover{
+
+  background-color: red;
+
+}
+.sect2 ul li:hover{
+
+  background-color: blue;
+
+}
+
+
+.sect1 i{
+  padding-right: 30px;
+  float: right;
+}
+.sect2 i{
+  padding-right: 30px;
+  float: right;
+}
+h1:hover{
+  color: blue;
+}
+
+h1{
+  padding-top: 10px;
+  color: white;
+  font-style: italic;
+}
+h3{
+  height: 80px;
+  text-align: center;
+  padding-top: 10px;
+  color: red;
+}
+
+.sect2{
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+
+}
