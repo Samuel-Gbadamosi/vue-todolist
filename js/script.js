@@ -1,6 +1,7 @@
 var app = new Vue ({
  el : '#app',
   data: {
+    newTodo : '',
     todos : [
       'Fare la spesa',
       'Go fishing',
@@ -25,6 +26,10 @@ var app = new Vue ({
         alert('you restored all files previously deleted 👻');
       }
 
+    },
+    addTodo(){
+      this.todos.push(this.newTodo);
+      this.newTodo = '';
     }
   }
 });
