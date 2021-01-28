@@ -8,7 +8,8 @@ var app = new Vue ({
       'Play video games',
       'study programming'
     ],
-  todosDelete : []
+  todosDelete : [],
+
 },
   methods : {
     deleteTodo (index){
@@ -30,6 +31,9 @@ var app = new Vue ({
     addTodo(){
       this.todos.push(this.newTodo);
       this.newTodo = '';
+    },
+    deleEternal(index){
+     this.todosDelete.splice(index,1);
     }
   }
 });
