@@ -15,12 +15,15 @@ var app = new Vue ({
        this.todos.splice(index,1);
        console.log(this.todosDelete);
        if(this.todos.length == 0){
-         alert('hai cancellato tutto');
+         alert('Oops! you deleted all files 😱');
        }
     },
     restoreTodo (index){
       this.todos.push(this.todosDelete[index]);
       this.todosDelete.splice(index,1);
+      if(this.todosDelete.length == 0){
+        alert('you restored all files previously deleted 👻');
+      }
 
     }
   }
